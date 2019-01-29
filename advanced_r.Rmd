@@ -28,3 +28,8 @@ opts_chunk$set(echo = FALSE)
 
 - [файл с данными для рисунка 1](Advanced_R/Exercises/data/myt_all.csv)
 - [файл с данными для рисунка 2](Advanced_R/Exercises/data/myt_Z0_all_full.csv)
+
+## Результаты работы над упражнением
+
+- [файл RMD] (My_html_project/Khaitov_et_al.Rmd)
+- [файл html](My_html_project/Khaitov_et_al.html)
