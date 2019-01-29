@@ -1,0 +1,20 @@
+---
+title: Курс "Advanced R"
+description: Материалы курса 
+---
+ 
+# Создание html документа с помощью rmarkdown
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(echo = FALSE)
+```
+
+В этой части курса мы учимся создавать простейшие html документы, используя 
+
+## Материалы для упражнения
+ 
+- [Текст работы для упражененя](Advanced_R/Exercises/Khaitov_et_al_Derjugin.docx)
+
+- [файл с данными для рисунка 1](Advanced_R/Exercises/data/myt_all.csv)
+- [файл с данными для рисунка 2](Advanced_R/Exercises/data/myt_Z0_all_full.csv)
