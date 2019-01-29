@@ -31,5 +31,5 @@ opts_chunk$set(echo = FALSE)
 
 ## Результаты работы над упражнением
 
-- [файл RMD] (My_html_project/Khaitov_et_al.Rmd)
+- [файл RMD](My_html_project/Khaitov_et_al.Rmd)
 - [файл html](My_html_project/Khaitov_et_al.html)
