@@ -9,6 +9,8 @@ library(knitr)
 opts_chunk$set(echo = FALSE)
 ```
 
+
+
 # **Часть 1.** Создание html документа 
 
 В этой части курса мы учимся создавать простейшие html документы, используя язык разметки документов `rmarkdown`
@@ -33,3 +35,50 @@ opts_chunk$set(echo = FALSE)
 
 - [файл RMD](My_html_project/Khaitov_et_al.Rmd)
 - [файл html](My_html_project/Khaitov_et_al.html)
+
+## Домашнее задание по итогам работы 29.01.19
+
+1. Доделайте все до конца.
+2. В итоговый RMD файл, сразуперед первым чанком поставьте кусочек кода, который приведен ниже. Это  позволяет менять парамтеры текста в html документе. 
+3. Меняя указаные в этом коде параметры, добейтесь наилучшего вда для финального документа.
+4. Полученный html файл пришлите мне до следующего занятия.
+
+*Вот код, который надо вставить*
+
+```
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 18px;
+  }
+td {  /* Table  */
+  font-size: 20px;
+}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+}
+h1 { /* Header 1 */
+  font-size: 28px;
+  color: DarkBlue;
+}
+h2 { /* Header 2 */
+    font-size: 22px;
+  color: DarkBlue;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
+```
+
+
