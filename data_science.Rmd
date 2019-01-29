@@ -20,7 +20,7 @@ https://varmara.github.io/linmodr/01_intro_to_r.html
 Перед тем, как ее проходить надо будет установить себе на компьютер две программы:
 
 1. Собственно **язык R** https://cran.r-project.org/bin/windows/base/
-2. Среду **Rstudio**, которая существенно облегчает и ускоряет рабту с R. https://www.rstudio.com/products/rstudio/download/
+2. Среду **Rstudio**, которая существенно облегчает и ускоряет работу с R. https://www.rstudio.com/products/rstudio/download/
 
 
 
