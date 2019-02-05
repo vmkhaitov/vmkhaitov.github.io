@@ -80,5 +80,11 @@ pre { /* Code block - determines code spacing between lines */
 </style>
 
 ```
+## Сданные дал ДЗ.
+Вот Анка и Слава - молодцы! Остальные... Господа, ДЗ надо делать и присылать.
+
+- [Слава RMD](My_html_project/Slava.Rmd)
+
+
 
 
