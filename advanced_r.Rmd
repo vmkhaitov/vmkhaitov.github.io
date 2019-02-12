@@ -102,4 +102,11 @@ pre { /* Code block - determines code spacing between lines */
 На всякий случай, вот последняя версия RMD файла, который мы сотворили. Можете ее использовать.
 - [Слава RMD](My_html_project/Slava.Rmd)
 
+## Создаем список литературы
+
+- [Библиография от Славы](My_html_project/litlist_forcopy.txt)
+- [Библиография от Анки](My_html_project/my_bibliography.bib)
+
+
+
 
