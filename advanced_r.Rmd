@@ -124,4 +124,27 @@ pre { /* Code block - determines code spacing between lines */
 3. Прислать мне итоговый .bib и три .csl файла.
 
 
+# **Часть 3.** Превращаем RMD в DOC
+В этой части курса мы научимся преращать наш RMD в документ Word. Для этого будем спользовать RMD-шник Маси  и ее дополнительные материалы (она первая прислала ДЗ, поэтому ей и тапочки).
+
+- [RMD файл, со вставленными ссылками](My_html_project/Masia.Rmd)
+- [файл .bib с библиографическими данными](My_html_project/bibliography.bib)
+- [modern-language-association-7th-edition-with-url.csl](My_html_project/modern-language-association-7th-edition-with-url.csl)
+- [reproduction-fertility-and-development.csl](My_html_project/reproduction-fertility-and-development.csl)
+- [scientia-agriculturae-bohemica.csl](My_html_project/scientia-agriculturae-bohemica.csl)
+- [american-journal-of-botany.csl](My_html_project/american-journal-of-botany.csl)
+- [hydrobiologia.csl](My_html_project/hydrobiologia.csl)
+- [derjugin_style.csl](My_html_project/derjugin_style.csl)
+- [marine-biology.csl](My_html_project/marine-biology.csl)
+- [american-journal-of-botany.csl](My_html_project/american-journal-of-botany.csl)
+- [brewingscience.csl](My_html_project/brewingscience.csl)
+- [geosystem-engineering.csl](My_html_project/geosystem-engineering.csl)
+
+
+
+
+
+
+
+
 
