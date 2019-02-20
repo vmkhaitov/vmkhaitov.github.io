@@ -29,7 +29,7 @@ https://varmara.github.io/linmodr/01_intro_to_r.html
 
 Теперь мы знаем как присваивать значения переменным, как написать пользовательскую функцию, что такое векторы и как проводится обращение к элементам векторов.
 
-[Вот код](My_firs_steps/my_first_script.R)
+[Вот код](Data_science/My_firs_steps/my_first_script.R)
 
 **Домашнее задание**
 
@@ -41,7 +41,7 @@ https://varmara.github.io/linmodr/01_intro_to_r.html
 
 Вот код который мы породили на занятии
 
-[Вот код](My_firs_steps/my_first_script.R)
+[Вот код](Data_science/My_firs_steps/my_first_script.R)
 
 
 **Домашнее задание**
