@@ -152,6 +152,57 @@ ggplot(bwt, aes(x = age, y = bwt, shape = smoker)) +
   facet_wrap( ~ race2)
 
 
+#Конвейерный способ обработки данных
+
+library("dplyr")
+
+mean_weght <- bwt %>% group_by(age) %>% summarise(mean_bwt = mean(bwt), n = n())
+
+ggplot(mean_weght, aes(x = age, y = mean_bwt)) + geom_line()
+
+
+
+mean_weght <- bwt %>% group_by(age, smoker) %>% summarise(mean_bwt = mean(bwt), n = n())
+
+ggplot(mean_weght, aes(x = age, y = mean_bwt)) + geom_line(aes(color = smoker))
+
+
+ggplot(bwt, aes(x = age, y = bwt)) +  stat_summary(fun.y = mean, geom = "line") + aes(color = smoker)
+
+
+
+ggplot(bwt, aes(x = bwt)) + geom_histogram(binwidth = 500)
+
+ggplot(bwt, aes(x = bwt)) + stat_bin(geom = "col", binwidth = 500)
+
+
+ggplot(bwt, aes(x = bwt)) + geom_histogram(bins = 10, aes(fill = smoker)) + facet_wrap(~smoker, dir = "v")
+
+
+ggplot(bwt, aes(x = bwt)) + geom_histogram(bins = 10, aes(fill = smoker)) + facet_wrap(~smoker, ncol = 1)
+
+
+ggplot(bwt, aes(x = bwt)) + geom_density(aes(fill = smoker), alpha = 0.5) 
+
+
+# Бокс-плоты
+
+ggplot(bwt, aes(x = smoker, y = bwt)) + geom_boxplot()
+
+
+bwt %>% group_by(smoker) %>% summarise(median(bwt))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
