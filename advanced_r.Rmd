@@ -164,7 +164,7 @@ https://vimeo.com/110804387
 
 ## Данные для работы 05.3.19
 
-- [RMD файл, со вставленными ссылками](My_html_project/Masia.Rmd)
+- [Архив проекта для работы](My_html_project.zip)
 
 
 
