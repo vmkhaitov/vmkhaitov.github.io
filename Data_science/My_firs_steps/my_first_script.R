@@ -196,15 +196,35 @@ bwt %>% group_by(smoker) %>% summarise(median(bwt))
 
 
 
+library(ggplot2)
+
+ggplot(data = iris, aes(x = Sepal.Length , y = Petal.Length, color = Species )) + geom_point() 
+
+
+ggplot(data = iris, aes(x = Species, y = Petal.Length)) + geom_boxplot()
+
+
+setosa <- iris$Petal.Length[iris$Species == "setosa"]
+
+setosa_sorted <- sort(setosa, decreasing = FALSE)
+
+length(setosa_sorted)
+
+median(setosa_sorted)
+
+
+credits <- read.table(file = "data/credits_sept.csv", sep = ",", header = TRUE)
+
+ggplot(data = credits, aes(x = Discipline, y = Credit)) + geom_boxplot() + theme(axis.text.x = element_text(angle = 90))
+
+ggplot(data = credits, aes(x = Discipline, y = Credit)) + geom_violin() + theme(axis.text.x = element_text(angle = 90))
 
 
 
+ggplot(data = credits, aes(x=1, y = Credit)) + geom_violin() + theme(axis.text.x = element_text(angle = 90))
 
 
-
-
-
-
+ggplot(data = credits, aes(x=factor(Subject), y = Credit)) + geom_boxplot() + theme(axis.text.x = element_text(angle = 90))
 
 
 

@@ -2,10 +2,8 @@
 title: "Факторы, определяющие структуру смешанных поселений *Mytilus edulis* Linnaeus и *M. trossulus* Gould в Кандалакшском заливе Белого моря"
 author: "Хайтов В. М., Сафонов П.Ю., Зайчикова А.А., Иванов М.В., Католикова М.В., Кудрявцева Е.П., Стрелков П.П."
 output: 
-  word_document:
-    reference_docx: example.docx
-    fig_width: 5
-    fig_height: 5
+    word_document:
+      reference_docx: Derugin_template_2.docx
 bibliography: bibliography.bib
 csl: american-journal-of-botany.csl
 ---

@@ -1,0 +1,25 @@
+---
+title: Курс "Введение в протистологию"
+description: Материалы курса 
+---
+ 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Презентации к курсу
+
+[Вводная лекция](Protistology_presentations/01 Вводная лекция.pptx)
+
+[Клетки протистов](Protistology_presentations/02 Клетки протистов.pptx)
+
+[Alveolata: Введение, Dinoflagellata, Perkinsozoa](Protistology_presentations/03 Введение, Dinoflagellata, Perkinsozoa.pptx)
+
+[Alveolata: Apicomplexa](Protistology_presentations/04 Apicomplexa.pptx)
+
+[Alveolata: Ciliphora](Protistology_presentations/05 Ciliophora.pptx)
+
+[Stramenopiles](Protistology_presentations/06 Stramenopiles.pptx)
+
+
+
