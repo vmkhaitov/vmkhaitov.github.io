@@ -212,6 +212,10 @@ length(setosa_sorted)
 
 median(setosa_sorted)
 
+quantile(setosa_sorted, probs = seq(0, 1, 0.05))
+
+
+
 
 credits <- read.table(file = "data/credits_sept.csv", sep = ",", header = TRUE)
 
@@ -224,8 +228,124 @@ ggplot(data = credits, aes(x = Discipline, y = Credit)) + geom_violin() + theme(
 ggplot(data = credits, aes(x=1, y = Credit)) + geom_violin() + theme(axis.text.x = element_text(angle = 90))
 
 
-ggplot(data = credits, aes(x=factor(Subject), y = Credit)) + geom_boxplot() + theme(axis.text.x = element_text(angle = 90))
+ggplot(data = credits, aes( y = Credit)) + geom_boxplot() + theme(axis.text.x = element_text(angle = 90))
+
+
+###################################################
+
+#Читаем данные
+
+cred_sept <- read.table("data/credits_sept.csv", sep = ",", header = TRUE ) 
+
+cred_sept <- cred_sept[ , -c(5:8)]
+
+names(cred_sept)
+  
+cred_sept$Month <- "Sept"
+
+
+cred_oct <- read.table("data/credits_oct.csv", sep = ",", header = TRUE ) 
+
+cred_oct$Month <- "Oct"
+
+
+credit <- rbind(cred_sept, cred_oct)
+
+gender <- read.table("data/gender.csv", sep = ";", header = TRUE)
+
+gender <- gender[-21, ]
+
+credit2 <- merge(credit, gender, by = "Subject" )
+
+
+ggplot(credit2, aes(x = Gender, y = Credit, fill = Month)) + geom_boxplot()
+
+ggplot(credit2, aes(x = Gender, y = Credit, fill = Month)) + geom_boxplot() + facet_wrap(~Discipline)
 
 
 
+ggplot(credit2, aes(y = Data, x = Credit)) + geom_point()
+
+str(credit2)
+
+unique(credit2$Data)
+
+inform <- credit2[credit2$Discipline == "Информатика", ]
+
+ggplot(inform, aes(x = Credit)) + geom_histogram() 
+
+
+ggplot() + geom_abline() + geom_abline(slope = 2, color = "blue") + geom_abline(color = "red", slope = 0.5) + geom_abline(slope = 2, intercept = 0.5, color = "yellow")
+
+
+set.seed(1234567)
+cred_rnd <- data.frame(cred = round(rnorm(1000, mean = 4, sd = 0.5),0))
+
+ggplot(cred_rnd, aes(x = cred)) + geom_histogram() + xlim(0, 7)
+
+
+
+sum(inform$Credit)/length(inform$Credit)
+
+
+mean(inform$Credit)
+median(inform$Credit)
+
+
+sd(inform$Credit)
+
+round(rnorm(100, mean = 3.5, sd = 0.9 ), 0)
+
+cred_rnd <- data.frame(cred = round(rnorm(100, mean = 3.9, sd = 0.9 ), 0))
+
+ggplot(cred_rnd, aes(x = cred)) + geom_histogram() + xlim(0, 7)
+
+
+
+library(ggplot2)
+
+elves <- data.frame(L = rnorm(1000, mean = 2.1, sd = 0.1),EL = rnorm(1000, mean = 0.1, sd = 0.001))
+
+
+
+
+ggplot(elves, aes(x = L)) + geom_histogram()
+
+ggplot(elves, aes(x = L, y = EL)) + geom_point()
+ 
+
+
+elves_sample <- elves[sample(1:1000, size = 5), ]
+
+mean(elves_sample$L)
+
+means_L <- data.frame(L = rep(NA, 100))
+
+for(i  in 1:100){
+  elves_sample <- elves[sample(1:1000, size = 50), ]
+  means_L$L[i] <- mean(elves_sample$L)
+}
+  
+pl_means <- ggplot(means_L, aes(x = L)) + geom_histogram() + xlim(1.5, 2.5)
+p_total <- ggplot(elves, aes(x = L)) + geom_histogram()+ xlim(1.5, 2.5)
+
+
+library(gridExtra)
+
+grid.arrange(pl_means, p_total)
+
+
+
+
+elves_sample <- elves[sample(1:1000, size = 5), ]
+
+M <- mean(elves_sample$L)
+SD <- sd(elves_sample$L)
+
+SE <- SD/sqrt(5)
+
+M - 2*SE
+
+M + 2*SE
+ 
 
